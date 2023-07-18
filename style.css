@@ -83,10 +83,35 @@ main {
 
 .form-container > .introduction > .service-intro {
     font-size: clamp(1rem,5vw,2rem);
-    font-weight: 700;
 }
 
 .form-container > .form-section {
     background-color: var(--color-white);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #464341;;
+}
+
+.form-container > .form-section > fieldset {
+    border: none;
+    display: flex;
+}
+
+.form-container > .form-section > fieldset > .input-group {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.7rem,5vw,1rem);
+}
+
+.form-container > .form-section > fieldset > .input-group:nth-child(2n) {
+    padding-left: 50px;
+}
+
+.form-container > .form-section > fieldset > .input-group > input {
+    border-radius: 3px;
+    border: 1px solid #9C9B98;
+}
+
+.form-container > .form-section > fieldset > .input-group > input:focus {
+    outline: 1px solid #0444b2;
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1);
 }
