@@ -115,6 +115,7 @@ main {
     flex-direction: column;
     font-size: var(--input-font-size,1rem);
     width: 50%;
+    position: relative;
 }
 
 .form-container > .form-section > fieldset > .input-group:nth-child(2n) {
@@ -136,6 +137,14 @@ main {
 
 .form-container > .form-section > fieldset > .input-group > input:invalid {
     outline: 1px solid #ce1c1c;
+}
+
+.form-container > .form-section > fieldset > .input-group > #invalid-message {
+    margin: 0;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+    color: #ce1c1c;
 }
 
 .form-container > .submit > button[type=submit] {
