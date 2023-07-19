@@ -21,6 +21,12 @@
         --h2-font-size:1.1rem;
     }
 
+    .form-container > .submit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 body {
