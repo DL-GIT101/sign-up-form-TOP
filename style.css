@@ -153,3 +153,7 @@ main {
     font-weight: 600;
     text-decoration: none;
 }
+
+.form-container > .submit > p > a:hover {
+    filter: brightness(1.5);
+}
