@@ -6,6 +6,7 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
@@ -51,7 +52,8 @@
                 <fieldset>
                     <div class="input-group">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" minlength="8">
+                        <input type="password" name="password" id="password" minlength="8" aria-describedby="invalid-message">
+                        <span id="invalid-message"></span>
                     </div>
                     <div class="input-group">
                         <label for="confirm_password">CONFIRM PASSWORD</label>
