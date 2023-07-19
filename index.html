@@ -17,7 +17,7 @@
             </div>
             
         </div>
-        <div class="form-container">
+        <form action="" method="get" class="form-container">
             <div class="introduction">       
                 <p>
                     Introducing our premium coffee service, delivering freshly roasted beans straight to your doorstep.
@@ -31,31 +31,31 @@
                 <fieldset>
                     <div class="input-group">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name">
+                        <input type="text" name="first_name" id="first_name" required minlength="2">
                     </div>
                     <div class="input-group">
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name">
+                        <input type="text" name="last_name" id="last_name" required minlength="2">
                     </div>
                 </fieldset>
                 <fieldset>
                     <div class="input-group">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="input-group">
                         <label for="phone_number">PHONE NUMBER</label>
-                        <input type="tel" name="phone_number" id="phone_number">
+                        <input type="tel" name="phone_number" id="phone_number" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div class="input-group">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required minlength="8">
                     </div>
                     <div class="input-group">
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
+                        <input type="password" name="confirm_password" id="confirm_password" required minlength="8">
                     </div>
                 </fieldset>
                 
@@ -64,7 +64,7 @@
                 <button type="submit">Create Account</button>
                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
-        </div>
+        </form>
     </main>
 </body>
 </html>
