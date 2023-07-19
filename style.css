@@ -129,7 +129,7 @@ main {
 }
 
 .form-container > .submit > button[type=submit] {
-    background-color: #472D22;
+    background-color: var(--color-main);
     border: none;
     border-radius: 5px;
     color: var(--color-white);
@@ -142,4 +142,14 @@ main {
 .form-container > .submit > button[type=submit]:hover {
     cursor: pointer;
     filter: brightness(1.5);
+}
+
+.form-container > .submit > p {
+    font-size: var(--h2-font-size,1.5rem);
+}
+
+.form-container > .submit > p > a {
+    color: var(--color-main);
+    font-weight: 600;
+    text-decoration: none;
 }
