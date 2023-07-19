@@ -134,6 +134,10 @@ main {
     box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.1);
 }
 
+.form-container > .form-section > fieldset > .input-group > input:invalid {
+    outline: 1px solid #ce1c1c;
+}
+
 .form-container > .submit > button[type=submit] {
     background-color: var(--color-accent);
     border: none;
